@@ -1,0 +1,21 @@
+{
+    "Index": {
+        "title": "Hola mundo"
+    },
+    "nav":{
+        "name":"Martin",
+        "proyects":"Proyectos",
+        "mystack":"Mi techSkills",
+        "aboutme":"Sobre mi",
+        "contactme":"Contactame",
+        "languajeES":"Español",
+        "languajeEN":"Ingles"
+    },
+    "footer":{
+        "name":"Hecho con amor❤️, por Martin Hernandez Peña"
+    },
+    "intro":{
+        "contactme":"Contactame conmigo",
+        "introText":"Manejar el Front y el Back es increible es como si tuviera mas poderes, tener un panorama mas completo del codigo."
+    }
+}

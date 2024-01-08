@@ -1,0 +1,21 @@
+{
+    "Index": {
+        "title": "Hello world!"
+    },
+    "nav":{
+        "name":"Martin",
+        "proyects":"Proyects",
+        "mystack":"My techSkills",
+        "aboutme":"About me",
+        "contactme":"Contact",
+        "languajeES":"Spanish",
+        "languajeEN":"English"
+    },
+    "footer":{
+        "name":"Made with love ❤️, by Martin Hernandez Peña"
+    },
+    "intro":{
+        "contactme":"Contact me",
+        "introText":"Handling the Front and the Back is amazing, it's like having more powers, having a more complete view of the code."
+    }
+}

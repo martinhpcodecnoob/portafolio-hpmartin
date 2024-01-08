@@ -1,0 +1,66 @@
+.fly1 {
+    animation: fly 1.5s ease-in-out 0.5s alternate infinite;
+}
+
+.fly2 {
+    animation: fly2 1.5s ease-in-out 0.5s alternate infinite;
+}
+
+.fly3 {
+    animation: fly3 1.5s ease-in-out 0.5s alternate infinite;
+}
+
+.lightBlue {
+    background-image: linear-gradient(
+        #0A3FFB 50%,
+        #d41919 70%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.typewriter{
+    border-right: 3px solid rgb(255, 255, 255);
+    margin: 0;
+}
+
+@keyframes fly {
+    from {
+        transform: translateY(4px);
+    }
+    to {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes fly2 {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes fly3 {
+    0% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
