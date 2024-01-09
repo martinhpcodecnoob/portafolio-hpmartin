@@ -8,11 +8,12 @@ import ModTheme from './ModTheme';
 
 export default function Header({nav}:{nav:Nav}) {
     const [visible, setVisible] = useState('hidden')
-    const changeVisible = () => {
-        if (visible === 'hidden') {
-            setVisible('')
+    const [visible2, setVisible2] = useState('hidden')
+    const changeVisible = (state:String, setState:Function) => {
+        if (state === 'hidden') {
+            setState('')
         } else {
-            setVisible('hidden')
+            setState('hidden')
         }
     }
     
@@ -27,7 +28,7 @@ export default function Header({nav}:{nav:Nav}) {
                             {/* <!-- Mobile menu button--> */}
                             <button 
                                 type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false"
-                                onClick={() => changeVisible()}
+                                onClick={() => changeVisible(visible,setVisible)}
                             >
                                 <span className="absolute -inset-0.5"></span>
                                 <span className="sr-only">Open main menu</span>
@@ -58,8 +59,11 @@ export default function Header({nav}:{nav:Nav}) {
                             <div className='mx-5 flex'>
                                 <ModTheme/>
                             </div>
-                            <PopoverLan languajeEN={nav.languajeEN} languajeES={nav.languajeES}>
-                                <button className='rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 text-[1.4rem]'>
+                            <PopoverLan visible={visible2} languajeEN={nav.languajeEN} languajeES={nav.languajeES}>
+                                <button 
+                                    className='rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 text-[1.4rem]'
+                                    onClick={() => changeVisible(visible2,setVisible2)}
+                                >
                                     <IoLanguageSharp/>
                                 </button>
                             </PopoverLan>

@@ -45,7 +45,7 @@ export default function RootLayout({children, params: {locale}}:{children :React
                     <header className='top-0 z-50 sticky'>
                         <Header nav={Nav}/>
                     </header>
-                    <div className='mx-auto min-h-[400vh] max-w-7xl px-2 sm:px-6 lg:px-8'>
+                    <div className='mx-auto min-h-[100vh] max-w-7xl px-2 sm:px-6 lg:px-8'>
                         {children}
                     </div>
                     <footer>

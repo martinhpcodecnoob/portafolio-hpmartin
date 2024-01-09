@@ -25,7 +25,7 @@ export default function ModTheme() {
                         <IoIosMoon/>
                     </button>
                 ) : 
-                theme === 'dark' ? (
+                (
                     <button
                         className='text-[1.4rem]'
                         onClick={() => setTheme('light')}
@@ -33,7 +33,6 @@ export default function ModTheme() {
                         <BsSunFill/>
                     </button>
                 )
-                : null
                 :null
             }
         </>
