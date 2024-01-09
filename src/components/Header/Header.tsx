@@ -9,7 +9,7 @@ import ModTheme from './ModTheme';
 export default function Header({nav}:{nav:Nav}) {
     const [visible, setVisible] = useState('hidden')
     const [visible2, setVisible2] = useState('hidden')
-    const changeVisible = (state:String, setState:Function) => {
+    const changeVisible = (state:String, setState:Function):void => {
         if (state === 'hidden') {
             setState('')
         } else {
@@ -105,7 +105,7 @@ export default function Header({nav}:{nav:Nav}) {
                         <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">{`<${nav.proyects}/>`}</a>
                         <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">{`<${nav.contactme}/>`}</a>
                     </div>
-                    <div className='w-[100%] h-[100vh] bg-slate-50 bg-opacity-0 fixed' onClick={changeVisible}>
+                    <div className='w-[100%] h-[100vh] bg-slate-50 bg-opacity-0 fixed' onClick={()=>changeVisible(visible,setVisible)}>
 
                     </div>
                 </div>
