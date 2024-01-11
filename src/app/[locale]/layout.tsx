@@ -10,6 +10,7 @@ import FooterD from '@/components/Footer/Footer';
 import { Footerr } from '@/InterfaceTS/footer';
 import { ThemeProvider } from "@/components/theme-provider"
 import ModTheme from '@/components/Header/ModTheme';
+import Stars from '@/components/Body/EffectStars/Stars';
 
 // Can be imported from a shared config
 const locales = ['en', 'es'];
@@ -42,6 +43,7 @@ export default function RootLayout({children, params: {locale}}:{children :React
                     enableSystem
                     disableTransitionOnChange
                 >
+                    <Stars/>
                     <header className='top-0 z-50 sticky'>
                         <Header nav={Nav}/>
                     </header>

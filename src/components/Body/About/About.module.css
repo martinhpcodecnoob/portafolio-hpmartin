@@ -1,0 +1,28 @@
+.stars{
+    position: relative;
+    font-size: 3em;
+    filter: drop-shadow(0px 0px 50px #0f0);
+}
+
+.starryicon {
+    font-size: 3rem;
+    animation: scaleAndRotate 1.2s ease-in-out infinite;
+    /* Ajusta la duración y el tipo de animación según sea necesario */
+}
+@keyframes scaleAndRotate {
+    0% {
+    transform: scale(0.5) rotate(0deg);
+    color: #d41919;
+    /* transform: translateY(4px); */
+    }
+    50% {
+    transform: scale(1.2) rotate(180deg);
+    color: #0A3FFB;
+    /* transform: translateY(-4px); */
+    }
+    100% {
+    transform: scale(0.5) rotate(360deg);
+    color: #d41919;
+    /* transform: translateY(4px); */
+    }
+}

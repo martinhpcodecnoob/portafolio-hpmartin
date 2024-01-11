@@ -1,3 +1,4 @@
+import About from '@/components/Body/About/About';
 import Intro from '@/components/Body/Intro/Intro';
 import {useTranslations} from 'next-intl';
 
@@ -8,6 +9,7 @@ export default function Index() {
   return(
     <div className=''>
       <Intro contactme={intro('contactme')} introText={intro('introText')}/>
+      <About/>
     </div>
   )
 }
